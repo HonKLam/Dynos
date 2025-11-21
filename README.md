@@ -2,6 +2,11 @@
 
 Dynos is a third-party app for [Memos](https://usememos.com/) for iOS and Android.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/67ddd137-07c5-4074-94f8-201be990fd67" width="300" />
+  <img src="https://github.com/user-attachments/assets/453205eb-d3e0-469a-8569-d427cbee2235" width="300" />
+</p>
+
 ## Disclaimer
 
 This is the most barebones it can get. Dynos doesn't even have a logo yet... I created this app just for myself (and partly as a learning project), but decided to open-source it since I currently don't have the time to work on it anymore. Maybe someone else might find it useful though :)
