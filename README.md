@@ -1,4 +1,4 @@
-# Dynos
+# Dynos 🦖
 
 Dynos is a third-party app for [Memos](https://usememos.com/) for iOS and Android.
 
@@ -10,7 +10,7 @@ If you are looking for an actual third-party app and don't care about offline fu
 
 ## Why though
 
-I was looking for a self-hosted alternative to store my journal entries and stumbled upon [Memos](https://usememos.com/), which is actually meant for any kind of notes (including journal entries). Unfortunately, I realized that Memos neither has its own app nor - more importantly - *offline functionality*.
+I was looking for a self-hosted alternative to store my journal entries and stumbled upon [Memos](https://usememos.com/), which is actually meant for any kind of notes (including journal entries). Unfortunately, I realized that Memos neither has its own app nor - more importantly - **offline functionality**.
 
 So I just tried to create my own app for this problem.
 
@@ -21,7 +21,7 @@ So I just tried to create my own app for this problem.
 - Create, delete, update memos
 - Open a calendar to see which days you didn’t write a memo
 - Filter memos by keyword or date
-- *Do all of this offline as well*
+- **Do all of this offline as well**
   - As soon as you have a connection to your Memos instance again, it will automatically create, update, delete, or refresh everything
 
 ## How does it work
@@ -38,7 +38,6 @@ The app is currently not available in any app store. However, feel free to sidel
 
    ```bash
    pnpm install
-   ```
 
 2. Start the app
 
@@ -49,4 +48,4 @@ For more information please check out the [Expo Documentation](https://docs.expo
 
 ## Contributions
 
-Contributions are welcome - whether they are issue reports, PRs or feedback! ^^
+Contributions are welcome - whether they are issue reports, PRs or plain feedback! ^^
