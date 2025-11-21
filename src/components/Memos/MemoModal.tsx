@@ -1,13 +1,13 @@
 import {
   Keyboard,
   Modal,
-  Pressable,
   TextInput,
   TouchableWithoutFeedback,
   View,
   StyleSheet,
   Text,
   ScrollView,
+  TouchableOpacity,
 } from 'react-native'
 import DatePickerModal from '@/components/Calendar/DatePickerModal'
 import AntDesign from '@expo/vector-icons/AntDesign'
@@ -30,21 +30,15 @@ export default ({ isVisible, handleCancel, handleSubmit, text, setText }: props)
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <View style={{ margin: 20, marginTop: 0, height: '100%', paddingBottom: '100%' }}>
             <View style={styles.topBar}>
-              <Pressable onPress={handleCancel} hitSlop={10}>
-                {({ pressed }) => {
-                  return (
-                    <AntDesign name={pressed ? 'closecircle' : 'closecircleo'} size={24} color={colors.notification} />
-                  )
-                }}
-              </Pressable>
+              <TouchableOpacity onPress={handleCancel} hitSlop={10}>
+                <AntDesign name={'close-circle'} size={24} color={colors.notification} />
+              </TouchableOpacity>
 
               <DatePickerModal />
 
-              <Pressable onPress={handleSubmit} hitSlop={10}>
-                {({ pressed }) => {
-                  return <AntDesign name={pressed ? 'checkcircle' : 'checkcircleo'} size={24} color={colors.text} />
-                }}
-              </Pressable>
+              <TouchableOpacity onPress={handleSubmit} hitSlop={10}>
+                <AntDesign name={'check-circle'} size={24} color={colors.text} />
+              </TouchableOpacity>
             </View>
 
             <View style={styles.textContainer}>

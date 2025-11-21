@@ -33,13 +33,6 @@ export default function TabLayout() {
           headerShown: false,
         }}
       />
-      <Tabs.Screen
-        name="Debug"
-        options={{
-          title: 'Debug',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="wrench" color={color} />,
-        }}
-      />
     </Tabs>
   )
 }

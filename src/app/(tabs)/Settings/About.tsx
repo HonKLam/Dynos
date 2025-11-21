@@ -33,7 +33,7 @@ export default () => {
           <SettingsCell
             title={'Report an issue'}
             icon={<Octicons name="issue-opened" size={24} color={colors.text} />}
-            onPress={() => openLink('https://github.com/honklam')}
+            onPress={() => openLink('https://github.com/honklam/Dynos/issues')}
           />
         </View>
         <Text style={{ color: colors.text }}>Version {Constants.expoConfig?.version}</Text>
