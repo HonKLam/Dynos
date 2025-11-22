@@ -2,6 +2,11 @@
 
 Dynos is a third-party app for [Memos](https://usememos.com/) for iOS and Android.
 
+[AltStore Button]: https://img.shields.io/badge/Download-AltStore-green?style=flat
+[AltStore Link]: https://honklam.github.io/apps.json 'Download with AltStore.'
+
+[![AltStore Button]][AltStore Link]
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/67ddd137-07c5-4074-94f8-201be990fd67" width="300" />
   <img src="https://github.com/user-attachments/assets/453205eb-d3e0-469a-8569-d427cbee2235" width="300" />
