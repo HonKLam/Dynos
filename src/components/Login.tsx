@@ -7,7 +7,8 @@ import { apiUrl$ } from '@/state/auth.store'
 import { hasLaunched$ } from '@/state/app.store'
 import { useTheme } from '@react-navigation/native'
 import { secureStoreSave } from '@/lib/secureStore'
-import { refreshMemoList } from '@/lib/memo-crud'
+import { createNewMemo, refreshMemoList } from '@/lib/memo-crud'
+import { memoList$ } from '@/lib/api'
 
 syncObservable(apiUrl$, {
   persist: {
@@ -42,6 +43,9 @@ export default function Login({ hasLaunched }: { hasLaunched: boolean }) {
       setApiUrlText('')
       setApiAccessTokenText('')
       hasLaunched$.set(true)
+
+      // HACK: Create Memo when connecting for Legend State to properly sync when logging in for the first time
+      createNewMemo('Welcome to Dynos! Feel free to delete this note! :)', new Date())
       refreshMemoList()
     } else {
       alert('Connection Failed. Please try again!')
