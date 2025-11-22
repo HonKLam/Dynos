@@ -44,6 +44,8 @@ The app is currently not available in any official app store. However, feel free
 
 ## How to use the App
 
+> !!! The app was tested on the newest Memos-version (v0.25.0). It is possible that older memo versions might not work with Dynos. !!!
+
 The first time the app is opened you will be greeted with a login screnn. Dynos requires an `URL` to your Memos instance *and* an access token. You can create a token in the `Settings` of your Memos instance. Give it a description and set the expiration date!
 
 > Keep in mind that setting the expiration date of the access token to `never` can be a security risk! If you are using Dynos and the token expires you can manually reset the credentials in the Dynos settings and put in a new access token.
