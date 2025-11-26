@@ -1,0 +1,21 @@
+{
+  "plugins": {
+    "release-it-pnpm": {}
+  },
+  "hooks": {
+    "before:init": "sh ./build/build.sh"
+  },
+  "git": {
+    "commitMessage": "chore: release ${version}",
+    "tagName": "${version}"
+  },
+  "github": {
+    "release": true,
+    "draft": true,
+    "web": true,
+    "autogenerate": true,
+    "assets": [
+      "./dist/releases/${version}/*"
+    ]
+  }
+}

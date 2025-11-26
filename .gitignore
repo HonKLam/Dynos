@@ -21,7 +21,6 @@ expo-env.d.ts
 # Build specific directories
 /ios
 /android
-/build
 
 # Metro
 .metro-health-check*
