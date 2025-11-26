@@ -1,10 +1,10 @@
 {
   "hooks": {
-    "after:bump": "cd ./dist/ && cat ../app.json | jq '.expo.version |= \"${version}\"'"
+    "after:bump": "cd ./dist/ && cat ../app.json | jq '.expo.version |= \"v${version}\"'"
   },
   "git": {
-    "commitMessage": "chore: release ${version}",
-    "tagName": "${version}"
+    "commitMessage": "chore: release v${version}",
+    "tagName": "v${version}"
   },
   "github": {
     "release": true,
