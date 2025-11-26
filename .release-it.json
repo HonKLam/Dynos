@@ -3,13 +3,18 @@
     "after:bump": "cat app.json | jq '.expo.version |= \"v${version}\"' > app.tmp && mv app.tmp app.json"
   },
   "git": {
-    "commitMessage": "chore: release v${version}",
-    "tagName": "v${version}"
+    "requireCleanWorkingDir": true,
+    "tag": true,
+    "tagName": "v${version}",
+    "commit": true,
+    "push": true,
+    "commitMessage": "chore: release v${version}"
   },
   "github": {
     "release": true,
+    "releaseName": "v${version}",
     "draft": true,
     "web": true,
-    "autogenerate": true
+    "autoGenerate": true
   }
 }
