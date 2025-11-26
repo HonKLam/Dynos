@@ -2,7 +2,7 @@
   "expo": {
     "name": "Dynos",
     "slug": "Dynos",
-    "version": "0.1.0-alpha",
+    "version": "v0.1.0-alpha",
     "orientation": "portrait",
     "icon": "src/assets/images/icon.png",
     "scheme": "dynos",
