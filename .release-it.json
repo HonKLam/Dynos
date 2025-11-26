@@ -3,7 +3,8 @@
     "release-it-pnpm": {}
   },
   "hooks": {
-    "before:init": "sh ./build/build.sh"
+    "after:bump": "cat ./app.json | jq '.expo.version |= `${version}`'",
+    "before:git:push": "sh ./dist/build.sh"
   },
   "git": {
     "commitMessage": "chore: release ${version}",
