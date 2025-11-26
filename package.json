@@ -1,7 +1,7 @@
 {
   "name": "dynos",
   "main": "expo-router/entry",
-  "version": "0.1.1-alpha",
+  "version": "0.1.1-alpha.0",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",

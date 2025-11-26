@@ -7,7 +7,7 @@
     "tagName": "${version}"
   },
   "github": {
-    "release": false,
+    "release": true,
     "draft": true,
     "preRelease": false,
     "web": true,
