@@ -1,22 +1,16 @@
 {
-  "plugins": {
-    "release-it-pnpm": {}
-  },
   "hooks": {
-    "after:bump": "cat ./app.json | jq '.expo.version |= \"${version}\"'",
-    "before:git:push": "sh ./dist/build.sh"
+    "after:bump": "cd ./dist/ && cat ../app.json | jq '.expo.version |= \"${version}\"'"
   },
   "git": {
     "commitMessage": "chore: release ${version}",
     "tagName": "${version}"
   },
   "github": {
-    "release": true,
+    "release": false,
     "draft": true,
+    "preRelease": false,
     "web": true,
-    "autogenerate": true,
-    "assets": [
-      "./dist/releases/${version}/*"
-    ]
+    "autogenerate": true
   }
 }

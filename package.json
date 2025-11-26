@@ -1,7 +1,7 @@
 {
   "name": "dynos",
   "main": "expo-router/entry",
-  "version": "1.0.0",
+  "version": "0.1.1-alpha",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
@@ -68,7 +68,6 @@
     "eslint-config-expo": "~10.0.0",
     "prettier": "^3.6.2",
     "release-it": "^19.0.6",
-    "release-it-pnpm": "^4.6.6",
     "typescript": "~5.9.3"
   },
   "private": true
