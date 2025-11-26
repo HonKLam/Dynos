@@ -9,7 +9,6 @@
   "github": {
     "release": true,
     "draft": true,
-    "preRelease": false,
     "web": true,
     "autogenerate": true
   }
